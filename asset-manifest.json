@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Kunto-Fitness/static/css/main.11808cdc.css",
+    "main.js": "/Kunto-Fitness/static/js/main.c409721a.js",
+    "static/media/heartWithRate.png": "/Kunto-Fitness/static/media/heartWithRate.3700fda74f1abc0dea1a.png",
+    "index.html": "/Kunto-Fitness/index.html",
+    "main.11808cdc.css.map": "/Kunto-Fitness/static/css/main.11808cdc.css.map",
+    "main.c409721a.js.map": "/Kunto-Fitness/static/js/main.c409721a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11808cdc.css",
+    "static/js/main.c409721a.js"
+  ]
+}
