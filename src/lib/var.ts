@@ -12,6 +12,9 @@ const image_style: object = {
 
 const gridRH: number = (Y * 0.65) / 9;
 
+const cap = (k: string): string =>
+  `${k.charAt(0).toUpperCase()}${k.substring(1)}`;
+
 const dateFormat: string = "ddd, DD / MM / YYYY HH:mm";
 
 const confirmMessage = "Please, confirm the deletion!";
@@ -33,6 +36,7 @@ export {
   kunto_fitness,
   image_style,
   gridRH,
+  cap,
   dateFormat,
   confirmMessage,
   tab_style_override,

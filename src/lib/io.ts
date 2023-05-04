@@ -100,7 +100,7 @@ const fetchTrainingStatistics = (
 ) => {
   fetch(trainings_url)
     .then((r) => r.json())
-    .then((o) => setData(getTrainingStatistics(o)))
+    .then((o) => setData(getTrainingStatistics(o, [])))
     .catch((e) => console.error(e));
 };
 

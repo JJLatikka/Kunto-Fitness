@@ -46,7 +46,7 @@ export function CustomerFunctionalities({
         <form>
           <Stack
             direction="row"
-            spacing={X / 300}
+            spacing={X / 400}
             justifyContent="center"
             alignItems="center"
           >

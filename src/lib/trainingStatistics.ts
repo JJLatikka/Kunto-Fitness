@@ -1,3 +1,5 @@
+import { cap } from "./var";
+
 const options = {
   responsive: true,
   plugins: {
@@ -39,7 +41,7 @@ const emptyData: Data = {
 
 const arrToMap = (arr: any, stats: Map): Map => {
   arr.forEach((o: any) => {
-    let { a, d } = { a: o.activity, d: parseInt(o.duration) };
+    let { a, d } = { a: o.activity.toLowerCase(), d: parseInt(o.duration) };
     !Object.keys(stats).includes(a)
       ? (stats[a] = d)
       : (stats[a] = stats[a] + d);
@@ -47,10 +49,11 @@ const arrToMap = (arr: any, stats: Map): Map => {
   return stats;
 };
 
-const getTrainingStatistics = (arr: any): Data => {
+const getTrainingStatistics = (arr: any, labels: string[]): Data => {
   const map: Map = arrToMap(arr, {});
   const dataSet: DataSet = { ...emptyDataSet, data: Object.values(map) };
-  return { labels: Object.keys(map), datasets: [dataSet] };
+  Object.keys(map).forEach((k) => labels.push(cap(k)));
+  return { labels: labels, datasets: [dataSet] };
 };
 
 export { options, emptyData, getTrainingStatistics };

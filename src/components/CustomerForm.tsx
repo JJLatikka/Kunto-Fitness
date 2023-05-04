@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { Customer, validate, alertMessage } from "../lib/customer";
 import { addCustomer, updateCustomer } from "../lib/io";
+import { cap } from "../lib/var";
 
 export function CustomerForm({
   open,
@@ -27,7 +28,6 @@ export function CustomerForm({
   setCustomers: React.Dispatch<React.SetStateAction<Customer[]>>;
 }) {
   const change = (n: any, v: any) => setCustomer({ ...customer, [n]: v });
-  const cap = (k: string) => `${k.charAt(0).toUpperCase()}${k.substring(1)}`;
   const textFields = Object.keys(customer)
     .slice(0, 7)
     .map((k, i) => (
