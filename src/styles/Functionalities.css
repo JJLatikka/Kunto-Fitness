@@ -1,0 +1,23 @@
+#functionalitiesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+#formContainer {
+  align-self: center;
+  min-width: 50vw;
+  color: #a5a5ff;
+  border: 4px solid #a5a5ff;
+  padding: 0 1vw 1.5vh 1vw;
+  margin: 4vh 1vw 0 1vw;
+}
+
+form {
+  min-height: 10vh;
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

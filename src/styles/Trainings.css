@@ -1,0 +1,25 @@
+#trainings_container {
+  background-color: #4242e7;
+  height: 100vh;
+}
+
+#trainings_gridContainer {
+  height: 65vh;
+  width: 70vw;
+  margin: 5vh 15vw 0 15vw;
+}
+
+#trainings_grid {
+  width: 100%;
+  height: 100%;
+  --ag-header-foreground-color: #282c34;
+  --ag-header-background-color: #c4c4c4;
+  --ag-header-cell-hover-background-color: #1976d2;
+  --ag-foreground-color: #282c34;
+  --ag-background-color: #c4c4c4;
+  --ag-row-hover-color: #1976d2;
+  --ag-selected-row-background-color: #1976d2;
+  --ag-row-border-color: #ffffff;
+  --ag-material-primary-color: #1976d2;
+  --ag-font-size: calc(1.75vmin);
+}

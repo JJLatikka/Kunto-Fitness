@@ -1,0 +1,22 @@
+#frame {
+  width: 100vw;
+  height: 100vh;
+  background-color: #a5a5ff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#center {
+  width: 90vw;
+  height: 70vh;
+  background-color: #4242e7;
+  color: #a5a5ff;
+  font-size: calc(10vmin);
+  font-family: "Courier";
+  font-style: italic;
+  font-weight: 550;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 2.5vh;
+}
